@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Blog</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(background.jpg); 
+        background-size: cover; 
+        background-position: center;
+        background-attachment: fixed;
+    }
+    nav{
+        background-color: #333;
+        padding: 10px;
+    }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    nav li{
+        display: inline;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        display: block;
+    }
+    nav a:hover{
+        background-color: #575757;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 940px;
+      margin: auto;
+      margin-top: 50px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+    }
+    .card-header img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 20px;
+      min-height: 250px;
+    }
+    .tag {
+      background-color: #ccc;
+      color: #fff;
+      border-radius: 50px;
+      font-size: 12px;
+      margin: 0;
+      padding: 2px 10px;
+      text-transform: uppercase;
+    }
+    .tag-teal {
+      background-color: #92d4e4;
+    }
+    .tag-purple {
+      background-color: #3d1d94;
+    }
+    .tag-pink {
+      background-color: #c62bcd;
+    }
+    .card-body a{
+        text-decoration: none;
+        color: #333;
+    }
+    .card-body a:hover{
+        text-decoration: underline;
+    }
+    .card-body h4 {
+      margin: 10px 0;
+    }
+    .card-body p {
+      font-size: 14px;
+      margin: 0 0 40px 0;
+      font-weight: 500;
+      color: rgb(70, 68, 68);
+    }
+    .user {
+      display: flex;
+      margin-top: auto;
+    }
+    .user img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+    .user-info h5 {
+      margin: 0;
+    }
+    .user-info small {
+      color: #888785;
+    }
+    @media (max-width: 940px) {
+      .container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
+    footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        bottom: -50px;
+        width: 100%;
+    }
+    footer a {
+        color: #3498db;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://commonwealthcollege.ca/blog/wp-content/uploads/2018/11/What-can-you-do-after-studying-Office-Administration.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <span class="tag tag-teal">Careers</span>
+            <h4><a href="https://commonwealthcollege.ca/blog/what-you-can-do-after-studying-office-administration/">What can you do after studying Office Administration?</a></h4>
+            <p>
+              A course in office administration will equip you with extensive knowledge in office management and help you design a workflow in terms of routine day-to-day activities that form the backbone of a company. It helps if you are a fast learner, have an eye for detail and are self-motivated. Office administration is a profession that is not industry-specific and you have the advantage of having a range of work options.
+            </p>
+            <div class="user">
+              <img src="https://commonwealthcollege.ca/wp-content/themes/cwc4/images/Commonwealth-College-Logo-01.png" alt="" />
+              <div class="user-info">
+                <h5>Commonwealth College</h5>
+                <small>2h ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="https://iticollege.edu/wp-content/uploads/2022/09/152-diminuida.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <span class="tag tag-purple">Skills</span>
+            <h4><a href="https://iticollege.edu/blog/office-administration-skill/">
+                Why Office Administration Training Is a Critical Skill for Success
+            </a></h4>
+            <p>
+                Gone are the days when a new employee would be trained on the job without prior formal training and education. We live in a complex world today that requires new hires to be better educated than their parents’ generation. Office administration skills lie at the heart of any office manager’s or office assistant’s abilities and responsibilities. Anyone seeking employment in this field must possess the necessary education and training to land and keep jobs.
+            </p>
+            <div class="user">
+              <img src="https://iticollege.edu/wp-content/uploads/2018/10/logo-icon.png" alt="" />
+              <div class="user-info">
+                <h5>ITI College</h5>
+                <small>Yesterday</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="https://aolcollege.com/storage/blog/office-administration-course-online-bc.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <span class="tag tag-pink">Office Administration</span>
+            <h4><a href="https://aolcollege.com/blog-post/is-office-administration-a-good-career">Is Office Administration a Good Career?</a></h4>
+            <p>
+                Office administrators are vital members of any organization. Office Administrators must mix hard and soft skills to excel in this role. Working independently and as part of a team is also a crucial requirement of this role.
+                Is a career in office administration right for you? If you have a penchant for organization, a knack for problem-solving, and thrive in dynamic environments, office administration is the pathway to a fulfilling and prosperous career. This comprehensive guide will help you decide if this path aligns with your values, goals, and aspirations.
+            </p>
+            <div class="user">
+              <img src="https://aolcollege.com/images/logos/aol-logo.webp" alt="" />
+              <div class="user-info">
+                <h5>Academy of Learning</h5>
+                <small>23 Dec 2020</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+        <p>&copy; 2024 Salve Joy Tidong. All rights reserved.</p>
+        <p>Visit my <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> profile</p>
+    </footer>
+
+</body>
